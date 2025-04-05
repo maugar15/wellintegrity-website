@@ -51,4 +51,40 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   observer.observe(section4);
+
+  // Set video playback speed for the embedded video (if it exists)
+  const video = document.querySelector('.video-embed video');
+  if (video) {
+    video.playbackRate = 0.5; // Adjust the speed as needed (0.5 = half speed)
+  }
+
+     // Listen for time updates on the video
+    video.addEventListener('timeupdate', function () {
+      if (video.currentTime >= 2) {
+        video.currentTime = 0;
+      }
+    });
+
+    // Modal functionality for early access button
+  const modal = document.getElementById("contact-modal");
+  const btn = document.getElementById("early-access-btn");
+  const closeBtn = document.querySelector(".modal .close");
+
+  // Open the modal when the button is clicked
+  btn.addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+
+  // Close the modal when the close icon is clicked
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Close the modal if the user clicks outside the modal content
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
 });

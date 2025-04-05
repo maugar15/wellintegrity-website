@@ -152,7 +152,7 @@ section {
 
 .contact-form input,
 .contact-form textarea {
-  background: #111;
+  background: #050505;
   border: 1px solid #333;
   color: #fff;
   padding: 1rem;
@@ -183,3 +183,127 @@ section {
   height: 100vh;
   overflow: hidden;
 }
+
+/* Section 5: AI-Powered Well Integrity Assistant */
+#section5 {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+  
+#section5 .ai-content {
+    max-width: 800px;
+    margin: 0 auto;
+    left: -30%;
+    position: relative;
+    z-index: 2; /* Ensure content stays on top of the video */
+}
+  
+  /* Video embed container */
+.video-embed {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Behind the content */
+    overflow: hidden;
+}
+  
+  /* Style the video to cover the container */
+.video-embed video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8;  /* Optional: add some transparency to blend with content */
+}
+
+/* CTA Button Styling */
+.cta-button {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+  .cta-button:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-content {
+    background-color: #222;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+  }
+  
+  /* Close Button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+  }
+  
+  /* Form Fields */
+  #early-access-form input {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #early-access-form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  
